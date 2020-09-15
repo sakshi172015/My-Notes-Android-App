@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:background="@drawable/gradient_2"
+        android:layout_marginTop="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="@android:color/black"
+            android:text="My Profile"
+            android:textStyle="italic"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="215dp"/>
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sakshi Jain"
+        android:layout_below="@id/profile_image"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_email"/>
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sakshi.172015@gmail.com"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_note"/>
+
+        <TextView
+            android:id="@+id/profile_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50 Notes"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/info"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Information:"-->
+<!--        android:textSize="37dp"-->
+<!--        android:layout_below="@id/profile_image"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:textStyle="italic"-->
+<!--        android:textColor="#FB8C00"-->
+<!--        android:layout_centerHorizontal="true"/>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rl1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/info"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginLeft="15dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Name: "-->
+<!--            android:textSize="20dp"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/profile_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_toEndOf="@id/name"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rl2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/rl1"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="15dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/email"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="E-Mail Address: "-->
+<!--            android:textSize="20dp"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/profile_email"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_toEndOf="@id/email"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/rl2"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginLeft="15dp">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/number"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Number: "-->
+<!--            android:textSize="20dp"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/profile_number"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_toEndOf="@id/number"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--    </RelativeLayout>-->
+
+</RelativeLayout>

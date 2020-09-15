@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity"
+    android:background="@drawable/gradient_4">
+
+    <LinearLayout
+        android:id="@+id/ll_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/add_note"/>
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Note"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="140dp"
+        android:background="@android:color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_title_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="#000000"
+            android:hint="Title"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginTop="210dp"
+        android:background="@android:color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:outlineAmbientShadowColor="#000000"
+            android:hint="Content"
+            android:lines="8"
+            android:inputType="text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/add_add_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/tick"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/add_add_btn"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:text="Add"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="@android:color/white"-->
+<!--        />-->
+
+</RelativeLayout>
